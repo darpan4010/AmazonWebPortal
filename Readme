@@ -1,0 +1,36 @@
+
+PROJECT STRUCTURE:- 
+Cubereum project is a simple java project.
+automation is the only package in it.
+	This package two classes
+		1. Cubereum- This class contains all the selenium realated code in simplified manner.
+					 This class contains overall 5 methods as below.
+					 	1. openAmazonPortal(WebDriver driver)
+					 	2. searchProduct(WebDriver driver)
+					 	3. filteroutProducts(WebDriver driver, JavascriptExecutor js)
+					 	4. printandWriteproductinfotoExcel(WebDriver driver)
+					 	5. getNthProductInformation(WebDriver driver, int n)	 
+		2. ExcelWriteOperation class contains code for excel write operation. 
+		
+Excel file where product records are updated is located under automation package. The records are under EXCELOPERATION sheet. 
+
+All the jars are associated with the project itself hence there is no need to explicitly add jars to class path. 
+
+All excel related jars are stored under ExcelLibs Folder under Project dir.
+
+All Selenium related jars are stored under resources Floder under Project dir.
+
+    
+****How To run the project:-**** 
+
+Import the given project in your existing eclipse workspace. 
+Expand src folder
+expand automation package
+Right click on Cubereum.java file under automation package and go to Run As ---> Java Application.
+Or Double click on Cubereum.java and right lick in the editor and go to Run As ---> Java Application.
+
+As per the ask in the assignment one more method has been created to get the nth product out of the list. 
+the method for this is getNthProductInformation(WebDriver driver, int n)
+This method will accept driver and n as integer and will return the product name once called. 
+
+
